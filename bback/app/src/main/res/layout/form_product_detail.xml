@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_margin="10dp"
+	android:background="#ffd400"
+	>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="115dp"
+		android:orientation="horizontal"
+		>
+
+		<ImageView
+			android:id="@+id/dialog_comment_imageview"
+			android:layout_width="113dp"
+			android:layout_height="115dp"
+			android:scaleType="centerCrop"/>
+
+		<TextView
+			android:id="@+id/drink"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textSize="13dp"
+			android:textStyle="bold"
+			android:layout_marginTop="45dp"/>
+
+		<TextView
+			android:id="@+id/price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="45dp"
+			android:text=""
+			android:textSize="13dp"
+			android:textStyle="bold"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"/>
+	</LinearLayout>
+	<View
+		android:layout_width="500dp"
+		android:layout_height="1dp"
+		android:background="@color/gray"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:text="얼음량(필수)"
+		android:textStyle="bold"
+		android:layout_marginTop="5dp"/>
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RadioGroup
+				android:layout_width="wrap_content"
+				android:layout_height="23dp"
+				android:orientation="horizontal"
+				android:id="@+id/radiogroup1">
+
+				<RadioButton
+					android:id="@+id/rbIce1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="35dp"
+					android:layout_marginRight="30dp" />
+
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dp"
+					android:layout_marginRight="30dp"
+					android:id="@+id/rbIce2"/>
+
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dp"
+					android:layout_marginRight="30dp"
+					android:id="@+id/rbIce3"/>
+
+			</RadioGroup>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="104dp"
+					android:layout_height="90dp"/>
+
+				<ImageView
+					android:layout_width="105dp"
+					android:layout_height="90dp"/>
+
+				<ImageView
+					android:layout_width="105dp"
+					android:layout_height="match_parent"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="Regular Ice"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:id="@+id/Ice1"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="Less Ice"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:id="@+id/Ice2"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="Full Ice"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:id="@+id/Ice3"
+					/>
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					/>
+
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
+	<View
+		android:layout_marginTop="5dp"
+		android:layout_width="500dp"
+		android:layout_height="1dp"
+		android:background="@color/gray"
+		android:layout_marginBottom="5dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:text="당도"
+		android:textStyle="bold"
+		android:layout_marginTop="5dp"/>
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RadioGroup
+				android:layout_width="wrap_content"
+				android:layout_height="23dp"
+				android:orientation="horizontal"
+				android:id="@+id/radiogroup2">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+					android:layout_marginRight="30dp"
+					android:id="@+id/rbSugar1"/>
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+					android:layout_marginRight="30dp"
+					android:id="@+id/rbSugar2"/>
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="28dp"
+					android:layout_marginRight="30dp"
+					android:id="@+id/rbSugar3"/>
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+					android:layout_marginRight="30dp"
+					android:id="@+id/rbSugar4"
+					/>
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+					android:layout_marginRight="30dp"
+					android:id="@+id/rbSugar5"/>
+
+			</RadioGroup>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="104dp"
+					android:layout_height="90dp"/>
+
+				<ImageView
+					android:layout_width="105dp"
+					android:layout_height="90dp"
+					/>
+
+				<ImageView
+					android:layout_width="105dp"
+					android:layout_height="match_parent"/>
+				<ImageView
+					android:layout_width="105dp"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="5dp"/>
+				<ImageView
+					android:layout_width="105dp"
+					android:layout_height="match_parent"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="0%"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:id="@+id/suger1"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="30%"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:id="@+id/suger2"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="50%"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:id="@+id/suger3"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="70%"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:layout_marginLeft="5dp"
+					android:id="@+id/suger4"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="100%"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:id="@+id/suger5"/>
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					android:layout_marginLeft="5dp"
+					/>
+				<TextView
+					android:layout_width="105dp"
+					android:layout_height="wrap_content"
+					android:text="+0"
+					android:textSize="15dp"
+					android:gravity="center"
+					android:textColor="@color/red"
+					/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
+
+	<View
+		android:layout_width="500dp"
+		android:layout_height="1dp"
+		android:background="@color/gray"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="10dp"
+		/>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="20dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="옵션:"
+			android:textColor="@color/red"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="10dp"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textColor="@color/red"
+			android:id="@+id/option"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="150dp"
+			android:layout_height="70dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="50dp"
+			android:backgroundTint="#FA5858"
+			android:text="취소"
+			android:textSize="18dp"
+			android:id="@+id/cancelbutton"
+			android:onClick="mcancel"/>
+		<Button
+			android:layout_width="150dp"
+			android:layout_height="70dp"
+			android:backgroundTint="#FA5858"
+			android:text="메뉴 담기"
+			android:textSize="18dp"
+			android:id="@+id/putmenu"
+			android:onClick="menuput"
+			/>
+
+
+	</LinearLayout>
+
+
+</LinearLayout>

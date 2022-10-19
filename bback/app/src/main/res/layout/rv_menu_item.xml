@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="220dp"
+	android:layout_margin="10dp"
+	app:cardCornerRadius="10dp"
+	app:cardElevation="10dp"
+	android:background="@color/brown">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="220dp"
+		android:orientation="vertical"
+		android:id="@+id/oneLayout"
+		android:background="@color/brown">
+
+		<ImageView
+			android:id="@+id/iv_menu_1"
+			android:layout_width="160dp"
+			android:layout_height="160dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"/>
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="25dp"
+			android:text="원조빽스치노(SOFT)"
+			android:textSize="16dp"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/tv_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="4000원"
+			android:textSize="16dp"
+			android:textStyle="bold"
+			android:layout_marginLeft="70dp"/>
+
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

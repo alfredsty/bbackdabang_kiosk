@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="110dp"
+	android:layout_margin="10dp"
+	android:padding="10dp"
+	app:cardCornerRadius="10dp"
+	app:cardElevation="10dp">
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="110dp"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<ImageView
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:id="@+id/drinkimage"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+				<ImageButton
+					android:id="@+id/ib_Plus"
+					android:layout_width="31dp"
+					android:layout_height="25dp"
+					android:layout_gravity="center"
+					android:layout_marginLeft="5dp"
+					android:src="@drawable/ic_plus"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="1"
+					android:layout_marginLeft="6dp"
+					android:id="@+id/et_count"
+					android:background="#eeeeee"/>
+
+				<ImageButton
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_gravity="center"
+					android:layout_marginLeft="6dp"
+					android:src="@drawable/ic_minus"
+					android:id="@+id/ib_minus"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="200dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+
+			<TextView
+				android:id="@+id/tv_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="25dp"
+				android:text="원조"
+				android:textColor="@color/black"
+				android:textSize="18dp"
+				android:textStyle="bold" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+
+				<TextView
+					android:id="@+id/option"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:text=""
+					android:textSize="10dp"
+					tools:text="옵션: 얼음 당도" />
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="200dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<ImageButton
+				android:id="@+id/iv_delete"
+				android:layout_width="31dp"
+				android:layout_height="25dp"
+				android:layout_marginLeft="50dp"
+				android:src="@drawable/ic_delete"
+				android:background="@android:color/white"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="40dp"
+					android:layout_marginLeft="10dp"
+					android:textSize="20dp"
+					tools:text="4,500원"
+					android:id="@+id/tv_price"/>
+
+
+			</LinearLayout>
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+</androidx.cardview.widget.CardView>
